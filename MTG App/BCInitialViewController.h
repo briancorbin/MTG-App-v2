@@ -10,8 +10,12 @@
 #import <Parse/Parse.h>
 #import "MyLoginViewController.h"
 #import "MySignUpViewController.h"
+#import "BCSearchViewController.h"
+#import "LoadingViewController.h"
 
-@interface BCInitialViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface BCInitialViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, BCSearchViewControllerDelegate>
 - (IBAction)actionLogout:(id)sender;
+- (IBAction)btnSearch:(id)sender;
+- (IBAction)btnPlay:(id)sender;
 
 @end

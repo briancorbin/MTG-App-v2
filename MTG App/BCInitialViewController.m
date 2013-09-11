@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -137,5 +137,18 @@
 {
     [PFUser logOut];
     [self viewDidAppear:YES];
+}
+
+- (IBAction)btnSearch:(id)sender
+{
+    BCSearchViewController *newVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BCSearchViewController"];
+    newVC.delegate = self;
+    [self presentViewController:newVC animated:NO completion:nil];
+}
+
+- (IBAction)btnPlay:(id)sender
+{
+    LoadingViewController *newVC = [[LoadingViewController alloc]initWithNibName:@"LoadingViewController" bundle:nil];
+    [self presentViewController:newVC animated:NO completion:nil];
 }
 @end
