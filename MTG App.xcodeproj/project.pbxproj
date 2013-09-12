@@ -458,6 +458,12 @@
 		E872FD1717DFF6B000306607 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD1617DFF6B000306607 /* icon@2x.png */; };
 		E872FD1B17DFFD5B00306607 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E872FD1917DFFD5A00306607 /* LoadingViewController.m */; };
 		E872FD1C17DFFD5B00306607 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E872FD1A17DFFD5A00306607 /* LoadingViewController.xib */; };
+		E872FD2317E15E0B00306607 /* ColorButtonResized.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2117E15E0B00306607 /* ColorButtonResized.png */; };
+		E872FD2417E15E0B00306607 /* ColorButtonResizedPresserd.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2217E15E0B00306607 /* ColorButtonResizedPresserd.png */; };
+		E872FD2917E160C000306607 /* SetButtonResized.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2517E160BF00306607 /* SetButtonResized.png */; };
+		E872FD2A17E160C000306607 /* SetButtonResizedPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2617E160BF00306607 /* SetButtonResizedPressed.png */; };
+		E872FD2B17E160C000306607 /* TypeButtonResized.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2717E160BF00306607 /* TypeButtonResized.png */; };
+		E872FD2C17E160C000306607 /* TypeButtonResizedPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2817E160BF00306607 /* TypeButtonResizedPressed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -921,6 +927,12 @@
 		E872FD1817DFFD5900306607 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		E872FD1917DFFD5A00306607 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		E872FD1A17DFFD5A00306607 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		E872FD2117E15E0B00306607 /* ColorButtonResized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorButtonResized.png; sourceTree = "<group>"; };
+		E872FD2217E15E0B00306607 /* ColorButtonResizedPresserd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorButtonResizedPresserd.png; sourceTree = "<group>"; };
+		E872FD2517E160BF00306607 /* SetButtonResized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetButtonResized.png; sourceTree = "<group>"; };
+		E872FD2617E160BF00306607 /* SetButtonResizedPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetButtonResizedPressed.png; sourceTree = "<group>"; };
+		E872FD2717E160BF00306607 /* TypeButtonResized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeButtonResized.png; sourceTree = "<group>"; };
+		E872FD2817E160BF00306607 /* TypeButtonResizedPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeButtonResizedPressed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1493,6 +1505,12 @@
 		E872FCF617DE727900306607 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				E872FD2517E160BF00306607 /* SetButtonResized.png */,
+				E872FD2617E160BF00306607 /* SetButtonResizedPressed.png */,
+				E872FD2717E160BF00306607 /* TypeButtonResized.png */,
+				E872FD2817E160BF00306607 /* TypeButtonResizedPressed.png */,
+				E872FD2117E15E0B00306607 /* ColorButtonResized.png */,
+				E872FD2217E15E0B00306607 /* ColorButtonResizedPresserd.png */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -1991,6 +2009,12 @@
 				E872FD1517DFF6A100306607 /* icon.png in Resources */,
 				E872FD1717DFF6B000306607 /* icon@2x.png in Resources */,
 				E872FD1C17DFFD5B00306607 /* LoadingViewController.xib in Resources */,
+				E872FD2317E15E0B00306607 /* ColorButtonResized.png in Resources */,
+				E872FD2417E15E0B00306607 /* ColorButtonResizedPresserd.png in Resources */,
+				E872FD2917E160C000306607 /* SetButtonResized.png in Resources */,
+				E872FD2A17E160C000306607 /* SetButtonResizedPressed.png in Resources */,
+				E872FD2B17E160C000306607 /* TypeButtonResized.png in Resources */,
+				E872FD2C17E160C000306607 /* TypeButtonResizedPressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
