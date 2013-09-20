@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "BCMagicCard.h"
+#include "BCLoadData.h"
 
 @class BCSearchViewController;
 @protocol BCSearchViewControllerDelegate <NSObject>
 @end
 
-@interface BCSearchViewController : UIViewController
+@interface BCSearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *screenScrollView;
+@property (nonatomic, strong) NSArray *cardLibrary;
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 - (IBAction)btnSet:(id)sender;
 - (IBAction)btnType:(id)sender;
 - (IBAction)btnColor:(id)sender;

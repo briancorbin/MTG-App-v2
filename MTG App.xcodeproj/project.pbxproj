@@ -453,7 +453,6 @@
 		E872FD0D17DE72DE00306607 /* load4.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD0817DE72DE00306607 /* load4.png */; };
 		E872FD0E17DE72DE00306607 /* load5.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD0917DE72DE00306607 /* load5.png */; };
 		E872FD1117DF8D0900306607 /* BCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E872FD1017DF8D0900306607 /* BCSearchViewController.m */; };
-		E872FD1317DFF63700306607 /* BookCaseBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD1217DFF63700306607 /* BookCaseBG.png */; };
 		E872FD1517DFF6A100306607 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD1417DFF6A100306607 /* icon.png */; };
 		E872FD1717DFF6B000306607 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD1617DFF6B000306607 /* icon@2x.png */; };
 		E872FD1B17DFFD5B00306607 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E872FD1917DFFD5A00306607 /* LoadingViewController.m */; };
@@ -464,6 +463,11 @@
 		E872FD2A17E160C000306607 /* SetButtonResizedPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2617E160BF00306607 /* SetButtonResizedPressed.png */; };
 		E872FD2B17E160C000306607 /* TypeButtonResized.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2717E160BF00306607 /* TypeButtonResized.png */; };
 		E872FD2C17E160C000306607 /* TypeButtonResizedPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E872FD2817E160BF00306607 /* TypeButtonResizedPressed.png */; };
+		E8A68F4717EA454100D56316 /* BottomBar320x44.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A68F4617EA454100D56316 /* BottomBar320x44.png */; };
+		E8A68F4D17EA49B300D56316 /* BookCaseBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E8A68F4C17EA49B300D56316 /* BookCaseBG.png */; };
+		E8A68F5017EA6E8F00D56316 /* Full Database.csv in Resources */ = {isa = PBXBuildFile; fileRef = E8A68F4F17EA6E8F00D56316 /* Full Database.csv */; };
+		E8A68F5317EA6F0F00D56316 /* BCLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A68F5217EA6F0F00D56316 /* BCLoadData.m */; };
+		E8A68F5617EA6FEA00D56316 /* BCMagicCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A68F5517EA6FEA00D56316 /* BCMagicCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -921,7 +925,6 @@
 		E872FD0917DE72DE00306607 /* load5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load5.png; sourceTree = "<group>"; };
 		E872FD0F17DF8D0900306607 /* BCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSearchViewController.h; sourceTree = "<group>"; };
 		E872FD1017DF8D0900306607 /* BCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSearchViewController.m; sourceTree = "<group>"; };
-		E872FD1217DFF63700306607 /* BookCaseBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BookCaseBG.png; sourceTree = "<group>"; };
 		E872FD1417DFF6A100306607 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E872FD1617DFF6B000306607 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		E872FD1817DFFD5900306607 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
@@ -933,6 +936,13 @@
 		E872FD2617E160BF00306607 /* SetButtonResizedPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetButtonResizedPressed.png; sourceTree = "<group>"; };
 		E872FD2717E160BF00306607 /* TypeButtonResized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeButtonResized.png; sourceTree = "<group>"; };
 		E872FD2817E160BF00306607 /* TypeButtonResizedPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeButtonResizedPressed.png; sourceTree = "<group>"; };
+		E8A68F4617EA454100D56316 /* BottomBar320x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomBar320x44.png; sourceTree = "<group>"; };
+		E8A68F4C17EA49B300D56316 /* BookCaseBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BookCaseBG.png; sourceTree = "<group>"; };
+		E8A68F4F17EA6E8F00D56316 /* Full Database.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Full Database.csv"; sourceTree = "<group>"; };
+		E8A68F5117EA6F0F00D56316 /* BCLoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCLoadData.h; sourceTree = "<group>"; };
+		E8A68F5217EA6F0F00D56316 /* BCLoadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLoadData.m; sourceTree = "<group>"; };
+		E8A68F5417EA6FEA00D56316 /* BCMagicCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMagicCard.h; sourceTree = "<group>"; };
+		E8A68F5517EA6FEA00D56316 /* BCMagicCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMagicCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1001,6 +1011,10 @@
 		E8082E4717D94A9D0067F248 /* MTG App */ = {
 			isa = PBXGroup;
 			children = (
+				E8A68F5117EA6F0F00D56316 /* BCLoadData.h */,
+				E8A68F5217EA6F0F00D56316 /* BCLoadData.m */,
+				E8A68F5417EA6FEA00D56316 /* BCMagicCard.h */,
+				E8A68F5517EA6FEA00D56316 /* BCMagicCard.m */,
 				E8082E5017D94A9D0067F248 /* AppDelegate.h */,
 				E8082E5117D94A9D0067F248 /* AppDelegate.m */,
 				E8082E5917D94A9E0067F248 /* MainStoryboard.storyboard */,
@@ -1023,6 +1037,7 @@
 		E8082E4817D94A9D0067F248 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E8A68F4E17EA6E7400D56316 /* Load Data */,
 				E872F9AC17DE6FC900306607 /* Images */,
 				E8082E4917D94A9D0067F248 /* MTG App-Info.plist */,
 				E8082E4A17D94A9D0067F248 /* InfoPlist.strings */,
@@ -1038,6 +1053,7 @@
 		E872F9AC17DE6FC900306607 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E8A68F4617EA454100D56316 /* BottomBar320x44.png */,
 				E872FD0417DE72CA00306607 /* Load */,
 				E872FCF617DE727900306607 /* Buttons */,
 				E872FCF317DE725400306607 /* Backgrounds */,
@@ -1497,7 +1513,7 @@
 		E872FCF317DE725400306607 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				E872FD1217DFF63700306607 /* BookCaseBG.png */,
+				E8A68F4C17EA49B300D56316 /* BookCaseBG.png */,
 			);
 			name = Backgrounds;
 			sourceTree = "<group>";
@@ -1525,6 +1541,14 @@
 				E872FD0917DE72DE00306607 /* load5.png */,
 			);
 			name = Load;
+			sourceTree = "<group>";
+		};
+		E8A68F4E17EA6E7400D56316 /* Load Data */ = {
+			isa = PBXGroup;
+			children = (
+				E8A68F4F17EA6E8F00D56316 /* Full Database.csv */,
+			);
+			name = "Load Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1593,6 +1617,7 @@
 				E872F9E017DE6FE200306607 /* 15.png in Resources */,
 				E872F9E117DE6FE200306607 /* 16.png in Resources */,
 				E872F9E217DE6FE200306607 /* 2.png in Resources */,
+				E8A68F4717EA454100D56316 /* BottomBar320x44.png in Resources */,
 				E872F9E317DE6FE200306607 /* 2B.png in Resources */,
 				E872F9E417DE6FE200306607 /* 2G.png in Resources */,
 				E872F9E517DE6FE200306607 /* 2R.png in Resources */,
@@ -1802,6 +1827,7 @@
 				E872FC2A17DE6FEF00306607 /* Limited Edition Alpha_Common.png in Resources */,
 				E872FC2B17DE6FEF00306607 /* Limited Edition Alpha_Rare.png in Resources */,
 				E872FC2C17DE6FEF00306607 /* Limited Edition Alpha_Uncommon.png in Resources */,
+				E8A68F4D17EA49B300D56316 /* BookCaseBG.png in Resources */,
 				E872FC2D17DE6FEF00306607 /* Limited Edition Beta_Common.png in Resources */,
 				E872FC2E17DE6FEF00306607 /* Limited Edition Beta_Rare.png in Resources */,
 				E872FC2F17DE6FEF00306607 /* Limited Edition Beta_Uncommon.png in Resources */,
@@ -1851,6 +1877,7 @@
 				E872FC5B17DE6FEF00306607 /* Mirrodin Besieged_Rare.png in Resources */,
 				E872FC5C17DE6FEF00306607 /* Mirrodin Besieged_Uncommon.png in Resources */,
 				E872FC5D17DE6FEF00306607 /* Mirrodin_Common.png in Resources */,
+				E8A68F5017EA6E8F00D56316 /* Full Database.csv in Resources */,
 				E872FC5E17DE6FEF00306607 /* Mirrodin_Rare.png in Resources */,
 				E872FC5F17DE6FEF00306607 /* Mirrodin_Uncommon.png in Resources */,
 				E872FC6017DE6FEF00306607 /* Modern Masters_Common.png in Resources */,
@@ -2005,7 +2032,6 @@
 				E872FD0C17DE72DE00306607 /* load3.png in Resources */,
 				E872FD0D17DE72DE00306607 /* load4.png in Resources */,
 				E872FD0E17DE72DE00306607 /* load5.png in Resources */,
-				E872FD1317DFF63700306607 /* BookCaseBG.png in Resources */,
 				E872FD1517DFF6A100306607 /* icon.png in Resources */,
 				E872FD1717DFF6B000306607 /* icon@2x.png in Resources */,
 				E872FD1C17DFFD5B00306607 /* LoadingViewController.xib in Resources */,
@@ -2025,12 +2051,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A68F5617EA6FEA00D56316 /* BCMagicCard.m in Sources */,
 				E8082E4E17D94A9D0067F248 /* main.m in Sources */,
 				E8082E5217D94A9D0067F248 /* AppDelegate.m in Sources */,
 				E8082E8417D950390067F248 /* BCInitialViewController.m in Sources */,
 				E8082E8717D950CD0067F248 /* MyLoginViewController.m in Sources */,
 				E8082E8A17D9F7120067F248 /* MySignUpViewController.m in Sources */,
 				E872FD1117DF8D0900306607 /* BCSearchViewController.m in Sources */,
+				E8A68F5317EA6F0F00D56316 /* BCLoadData.m in Sources */,
 				E872FD1B17DFFD5B00306607 /* LoadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
