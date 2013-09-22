@@ -13,7 +13,7 @@
     IBOutlet UIImageView *animationImageView;
 }
 
-//-(void)delay1;
+-(void)delay1;
 -(void)delay2;
 -(void)delay3;
 @end

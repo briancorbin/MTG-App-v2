@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    screenScrollView.contentSize = CGSizeMake(320, 1048);
+    screenScrollView.contentSize = CGSizeMake(320, 1008);
     screenScrollView.scrollEnabled = YES;
     
     myTableView.backgroundColor = [UIColor clearColor];
