@@ -14,7 +14,7 @@
 
 @implementation BCSearchViewController
 
-@synthesize screenScrollView, myTableView, cardLibrary;
+@synthesize screenScrollView, myTableView, cardLibrary, searchingLibrary, mySearchBar, isSearching;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,7 +51,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [cardLibrary count];
+    if(!isSearching) return [cardLibrary count];
+    else return [searchingLibrary count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,15 +60,61 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CardCell"];
     UILabel *labelCardName =(UILabel *)[cell viewWithTag:1];
     UILabel *labelCardType =(UILabel *)[cell viewWithTag:2];
-    //UIImageView *imageViewSet =(UIImageView *)[cell viewWithTag:3];
-    
+    UIImageView *imageViewCardSet =(UIImageView *)[cell viewWithTag:3];
     if(cell == nil) cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CardCell"];
     cell.backgroundColor = [UIColor clearColor];
-    BCMagicCard *tempMC = (BCMagicCard *)[cardLibrary objectAtIndex:indexPath.row];
+    BCMagicCard *tempMC;
+    if(!isSearching) tempMC = (BCMagicCard *)[cardLibrary objectAtIndex:indexPath.row];
+    else tempMC = (BCMagicCard *)[searchingLibrary objectAtIndex:indexPath.row];
     labelCardName.text = tempMC.name;
     labelCardType.text = tempMC.type;
+    imageViewCardSet.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_%@", tempMC.set, tempMC.rarity]];
+
+    NSMutableArray *manaSymbols = [[NSMutableArray alloc]initWithArray:[tempMC.mc componentsSeparatedByString:@"}"]];
+    [manaSymbols removeLastObject]; //gets rid of "" at the end of the array
+    for(int i=0; i<10; i++)
+    {
+        NSString *manaSymbol;
+        if(i<[manaSymbols count]) manaSymbol = [[manaSymbols objectAtIndex:i] stringByReplacingOccurrencesOfString:@"{" withString:@""];
+        UIImageView *imgManaSymbol = (UIImageView *)[cell viewWithTag:i+4];
+        imgManaSymbol.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", manaSymbol]];
+        if(i >= [manaSymbols count]) imgManaSymbol.image = nil;
+    }
     return cell;
 }
+
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    if(searchText.length == 0)
+    {
+        isSearching = NO;
+    }
+    else
+    {
+        isSearching = YES;
+        searchingLibrary = [[NSMutableArray alloc]init];
+        for(BCMagicCard *tempMC in cardLibrary)
+        {
+            NSRange MCNameRange = [tempMC.name rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            if(MCNameRange.location != NSNotFound)
+            {
+                [searchingLibrary addObject:tempMC];
+            }
+        }
+    }
+    [myTableView reloadData];
+}
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [mySearchBar resignFirstResponder];
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [mySearchBar resignFirstResponder];
+}
+
 
 - (IBAction)btnSet:(id)sender {
 }

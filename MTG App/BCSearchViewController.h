@@ -17,7 +17,10 @@
 @interface BCSearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *screenScrollView;
 @property (nonatomic, strong) NSArray *cardLibrary;
+@property (nonatomic, strong) NSMutableArray *searchingLibrary;
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
+@property BOOL isSearching;
+@property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
 - (IBAction)btnSet:(id)sender;
 - (IBAction)btnType:(id)sender;
 - (IBAction)btnColor:(id)sender;
