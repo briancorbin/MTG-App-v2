@@ -29,6 +29,8 @@
     
 }
 
+- (BOOL)prefersStatusBarHidden{return YES;}
+
 -(void)viewDidAppear:(BOOL)animated
 {
     if(![PFUser currentUser])

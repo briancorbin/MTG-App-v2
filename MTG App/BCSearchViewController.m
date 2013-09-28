@@ -25,10 +25,12 @@
     return self;
 }
 
+- (BOOL)prefersStatusBarHidden{return YES;}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    screenScrollView.contentSize = CGSizeMake(320, 1008);
+    screenScrollView.contentSize = CGSizeMake(320, 1048);
     screenScrollView.scrollEnabled = YES;
     
     myTableView.backgroundColor = [UIColor clearColor];
@@ -112,6 +114,9 @@
 
 -(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
+    isSearching = NO;
+    mySearchBar.text = @"";
+    [myTableView reloadData];
     [mySearchBar resignFirstResponder];
 }
 
